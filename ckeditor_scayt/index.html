@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CKEditor SCAYT IE issue demo</title>
+	<script src="/ckeditor_scayt/CKEditor/ckeditor.js"></script>
+</head>
+<body>
+	<textarea id="ckeditor"></textarea>
+	<script>
+		window.onload = function() {
+			window.CKEDITOR_BASEPATH = '/ckeditor_scayt/CKEditor/';
+			document.domain = 'github.io';
+			CKEDITOR.replace('ckeditor');
+		};
+	</script>	
+</body>
+</html>
