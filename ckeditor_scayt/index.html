@@ -11,7 +11,10 @@
 		window.onload = function() {
 			window.CKEDITOR_BASEPATH = '/ckeditor_scayt/CKEditor/';
 			document.domain = 'oryol.github.io'
-			CKEDITOR.replace('ckeditor', {customConfig: ''});
+			CKEDITOR.replace('ckeditor', {
+				customConfig: '',
+				scayt_autoStartup: true
+			});
 		};
 	</script>	
 </body>
